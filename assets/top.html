@@ -1,0 +1,43 @@
+<html>
+
+
+
+<head>
+	<title>Warframe Relic Price Check</title>
+	<script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" >
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+	<link rel="icon" type="image/png" href="./img/platinum.png" />
+</head>
+
+
+
+<body onload="init()">
+
+	<div id="inputs">
+		<input type="text" placeholder="Search ..." id="search_bar" oninput="update_results()">
+		<label><input type="radio" name="relic_type" onclick="filter_relic_tier('')" value="All" checked="checked">All</label>
+		<label><input type="radio" name="relic_type" onclick="filter_relic_tier('Lith')" value="Lith">Lith</label>
+		<label><input type="radio" name="relic_type" onclick="filter_relic_tier('Meso')" value="Meso">Meso</label>
+		<label><input type="radio" name="relic_type" onclick="filter_relic_tier('Neo')" value="Neo">Neo</label>
+		<label><input type="radio" name="relic_type" onclick="filter_relic_tier('Axi')" value="Axi">Axi</label>
+	</div>
+
+	<div id="table_wrapper">
+		<div id="item_div">
+
+			<table id="items">
+				<thead>
+					<tr>
+						<td>Name</td>
+						<td><img src="img/platinum.png"></td>
+						<td>Ratio</td>
+						<td><img src="img/ducats.png"></td>
+						<!-- <td>Relic Tier</td>
+						<td>Relic Type</td> -->
+						<td><a href="./tier-list.csv">Relic</a></td>
+						<td title="Vaulted ?">V</td>
+						<td></td>
+					</tr>
+				</thead>
+				<tbody>

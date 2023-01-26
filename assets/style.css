@@ -1,0 +1,176 @@
+
+/* ==================== Whole page ==================== */
+
+body {
+	color: #ffffff;
+	background-color: #303030;
+	font-family: "Open Sans", "Arial";
+	font-size: 20px;
+}
+
+
+
+
+
+/* ==================== Search bar & buttons ==================== */
+
+#inputs {
+	padding: 5 20 0 20;
+}
+#inputs #search_bar {
+	padding: 3 5 3 5;
+	width: 20%;
+	font-size: 20px;
+}
+#inputs > label {
+	margin-left: 14;
+	font-size: 24px;
+}
+#inputs > label > input {
+	padding-right: 20;
+}
+
+
+
+
+
+/* ==================== Main Table ==================== */
+
+/* Main styling */
+#items {
+	margin: 10 20 20 20;
+	width: 710px;
+	border-collapse: collapse;
+	padding: 8px;
+	text-align: center;
+	font-size: 16px;
+}
+
+/* Headers */
+#items > thead {
+	text-align: center;
+	background-color: #202020;
+}
+#items > thead > tr > td:nth-child(5) > a {
+	color: inherit;
+	text-decoration: underline dotted white;
+}
+
+/* Table column sizes */
+#items > thead > tr > td:nth-child(1) { width: 300px; }
+#items > thead > tr > td:nth-child(2) { width: 80px; }
+#items > thead > tr > td:nth-child(3) { width: 80px; }
+#items > thead > tr > td:nth-child(4) { width: 80px; }
+#items > thead > tr > td:nth-child(5) { width: 120px; }
+#items > thead > tr > td:nth-child(6) { width: 25px; }
+#items > thead > tr > td:nth-child(7) { width: 25px; }
+
+/* Column-specific styling */
+#items > tbody > tr > td:nth-child(1) {
+	text-align: left;
+	padding: 0 0 0 8;
+}
+#items > tbody > tr > td:nth-child(7) {
+	font-weight: bold;
+}
+#items td a {
+	color: inherit;
+	text-decoration: inherit;
+}
+#items .gold {
+	color: gold;
+}
+#items .silver {
+	color: #fcffe5;
+}
+#items .bronze {
+	color: #ed9a47;
+}
+
+
+#items td, #items th {
+	border: 1px solid #ddd;
+}
+#items td {
+	padding: 1 2 1 2;
+}
+
+/* Alternate colors between rows */
+#items > tbody > tr:nth-child(even) {
+	background-color: #404040;
+	color: #dddddd;
+}
+#items > tbody > tr:nth-child(odd) {
+	background-color: #505050;
+	color: #fcffe5;
+}
+
+/* Highlight hovering row */
+#items > tbody > tr:hover {
+	background-color: #303030;
+}
+
+
+
+/* ==================== Opened relics ==================== */
+
+#items {
+	float: left;
+}
+#opened {
+	float: left;
+}
+#opened {
+	margin: 10 20 20 20;
+	width: 685px;
+	border-collapse: collapse;
+	padding: 8px;
+	text-align: center;
+	font-size: 14px;
+	background-color: #505050;
+	color: #fcffe5;
+}
+
+/* Headers */
+#opened > thead {
+	text-align: center;
+	background-color: #202020;
+}
+#opened > thead > tr:nth-child(1) {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+/* Table column sizes */
+#opened > thead > tr > td:nth-child(1) { width: 300px; }
+#opened > thead > tr > td:nth-child(2) { width: 80px; }
+#opened > thead > tr > td:nth-child(3) { width: 80px; }
+#opened > thead > tr > td:nth-child(4) { width: 80px; }
+#opened > thead > tr > td:nth-child(5) { width: 120px; }
+#opened > thead > tr > td:nth-child(6) { width: 25px; }
+
+/* Column-specific styling */
+#opened > tbody > tr > td:nth-child(1) {
+	text-align: left;
+	padding: 0 0 0 8;
+}
+#opened td a {
+	color: inherit;
+	text-decoration: inherit;
+}
+#opened .gold {
+	color: gold;
+}
+#opened .silver {
+	color: #fcffe5;
+}
+#opened .bronze {
+	color: #ed9a47;
+}
+
+#opened td, #opened th {
+	border: 1px solid #ddd;
+}
+#opened td {
+	padding: 1 2 1 2;
+}
